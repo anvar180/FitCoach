@@ -1,0 +1,141 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="findgymbro.MainPage"
+             
+             Shell.BackgroundColor="LightBlue">
+    <Shell.TitleView>
+        <HorizontalStackLayout VerticalOptions="Fill">
+            <Image Source="gantbli.png" HeightRequest="40" Margin="5,0,0,0"/>
+            <Label Text=" Find. Gym. Bro." FontFamily="Strande2" TextColor="White" VerticalTextAlignment="Center" VerticalOptions="Center" HeightRequest="50" FontSize="Medium"/>
+        </HorizontalStackLayout>
+    </Shell.TitleView>
+    
+    <ContentPage.ToolbarItems>
+        <ToolbarItem
+            Order="Secondary"
+            Text="Не нажимай!"
+            Clicked="ToolbarItem_Clicked"/>
+    </ContentPage.ToolbarItems>
+
+    <ContentPage.Background>
+        <LinearGradientBrush EndPoint="0,1">
+            <GradientStop Color="LightBlue"
+                          Offset="0.1" />
+            <GradientStop Color="Black"
+                          Offset="0.9" />
+        </LinearGradientBrush>
+    </ContentPage.Background>
+
+    <ScrollView>
+        <Grid RowDefinitions="*,Auto">
+            <VerticalStackLayout Grid.Row="0"
+                         Padding="25">
+
+                <Border StrokeThickness="4"
+                        StrokeShape="RoundRectangle 10" 
+                        BackgroundColor="Blue"
+                        VerticalOptions="Center"
+                        Stroke="Transparent">
+                    <Border.Background>
+                        <LinearGradientBrush EndPoint="0,1">
+                            <GradientStop Color="LightBlue"
+                                          Offset="0.1" />
+                            <GradientStop Color="Gray"
+                                          Offset="0.9" />
+                        </LinearGradientBrush>    
+                    </Border.Background>
+                         
+                    <VerticalStackLayout>
+                        <Border Stroke="Transparent"
+                        StrokeThickness="0"
+                        StrokeShape="RoundRectangle 10" 
+                        HorizontalOptions="Center" Margin="75,10,75,5">
+                            <Image Source="spartak.jpg"
+                           HorizontalOptions="Center">
+                            </Image>
+                        </Border>
+                    <Label Text="Спартак" TextColor="White" FontSize="Small" VerticalOptions="Center" HorizontalOptions="Center" Margin="0,0,0,5"/>
+                    </VerticalStackLayout>
+                </Border>
+                
+    
+    
+    
+    
+                <Grid Margin="0, 20, 0, 0"
+              ColumnDefinitions="*, *"
+              RowDefinitions="Auto">
+                    
+                    <Border StrokeThickness="4"
+                        StrokeShape="RoundRectangle 10" 
+                        VerticalOptions="Center"
+                        Stroke="Transparent"
+                            Padding="10"
+                            Grid.Column="0" Margin="0,0,5,0"
+                            HeightRequest="150">
+                        <Border.Background>
+                            <LinearGradientBrush EndPoint="0,1">
+                                <GradientStop Color="LightBlue"
+                                          Offset="0.1" />
+                                <GradientStop Color="Gray"
+                                          Offset="0.9" />
+                            </LinearGradientBrush>
+                        </Border.Background>
+                        <VerticalStackLayout>
+                            <Label Text="БЛИЖАЙШИЙ НА КАРТЕ 🔍" FontAttributes="Bold" TextColor="White" FontSize="Body" HorizontalOptions="Center" HorizontalTextAlignment="Center" FontFamily="Calibri" Margin="0,5,0,35" >
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="Map" />
+                            </Label.GestureRecognizers>
+                            </Label>
+                            <Label Text="ТРЕНАЖЁРНЫЙ ЗАЛ" FontAttributes="Bold" TextColor="White" FontSize="Body" HorizontalOptions="Center" HorizontalTextAlignment="Center" FontFamily="Calibri" Margin="0,10,0,0" />
+                        </VerticalStackLayout>
+                    </Border>
+
+                    <Border StrokeThickness="4"
+                             StrokeShape="RoundRectangle 10" 
+                             VerticalOptions="Center"
+                             Stroke="Transparent"
+                            HeightRequest="150"
+                            Padding="10"
+                            Grid.Column="1" Margin="5,0,0,0">
+                        <Border.Background>
+                            <LinearGradientBrush EndPoint="0,1">
+                                <GradientStop Color="LightBlue"
+                       Offset="0.1" />
+                                <GradientStop Color="Gray"
+                       Offset="0.9" />
+                            </LinearGradientBrush>
+                        </Border.Background>
+                        <VerticalStackLayout>
+                            <Label Text="ПРЕДПОЧТЕНИЯ" FontAttributes="Bold" TextColor="White" FontSize="Body" HorizontalOptions="Center" HorizontalTextAlignment="Center" FontFamily="Calibri" Margin="0,5,0,35">
+                                <Label.GestureRecognizers>
+                                    <TapGestureRecognizer Tapped="Predpoch" />
+                                </Label.GestureRecognizers>
+                            </Label>
+                            <Label Text="ВОЗРАСТ" FontAttributes="Bold" TextColor="White" FontSize="Body" HorizontalOptions="Center"  HorizontalTextAlignment="Center" FontFamily="Calibri" Margin="0,10,0,0" >
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="Age" />
+                            </Label.GestureRecognizers>
+                            </Label>
+                        </VerticalStackLayout>
+                    </Border>
+
+
+
+
+
+                </Grid>
+            </VerticalStackLayout>
+            <HorizontalStackLayout HorizontalOptions="Fill" Grid.Row="1"
+                           BackgroundColor="Black">
+                <ImageButton Source="share_button.png" HorizontalOptions="Start" BackgroundColor="Transparent"/>
+                <ImageButton Source="like_button.png" HorizontalOptions="Center" BackgroundColor="Transparent"/>
+                <ImageButton Source="chat_button.png" HorizontalOptions="End" BackgroundColor="Transparent"/>
+                
+            </HorizontalStackLayout>
+        </Grid>
+
+    </ScrollView>
+
+</ContentPage>
