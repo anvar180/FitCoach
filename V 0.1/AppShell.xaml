@@ -8,8 +8,13 @@
     Title="findgymbro">
 
     <ShellContent
-        Title="Home"
+        Title="MainPage"
         ContentTemplate="{DataTemplate local:MainPage}"
         Route="MainPage" />
+
+    <ShellContent
+        Title="ChatPage"
+        ContentTemplate="{DataTemplate local:ChatPage}"
+        Route="ChatPage" />
 
 </Shell>

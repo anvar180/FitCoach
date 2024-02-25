@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="findgymbro.ChatPage"
+             Shell.BackgroundColor="LightBlue"
+             >
+    <ContentPage.Background>
+        <LinearGradientBrush EndPoint="0,1">
+            <GradientStop Color="SteelBlue"
+                      Offset="0.1"/>
+            <GradientStop Color="Black"
+                      Offset="1"/>
+        </LinearGradientBrush>
+    </ContentPage.Background>
+
+   
+        
+        <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="auto"/>
+        </Grid.RowDefinitions>
+
+        
+            <ImageButton VerticalOptions="Start" HorizontalOptions="Start" Source="chatback.png" Clicked="ImageButton_Clicked" BackgroundColor="Transparent" WidthRequest="60" Margin="15, 15, 0, 0"/>
+                <VerticalStackLayout HorizontalOptions="Center" Margin="10">
+                    <Border Stroke="Transparent"
+                            StrokeThickness="0"
+                            StrokeShape="RoundRectangle 100" 
+                            HorizontalOptions="Center" >
+                                        <Image Source="spartak.jpg" HeightRequest="60"
+                               HorizontalOptions="Center">          
+                                        </Image>
+                    </Border>
+                    <Label Text="Спартак" TextColor="LightGray" FontSize="Micro" VerticalOptions="Center" HorizontalOptions="Center"/>
+                </VerticalStackLayout>
+        
+
+
+
+
+
+
+
+        <Border Grid.Row="1" Stroke="Transparent">
+            <ScrollView>
+
+                <VerticalStackLayout>
+
+                    <Label Text="Вт, 20.02.2024" TextColor="LightGray" FontSize="Default" HorizontalOptions="Center" Margin="10"/>
+                    <Border BackgroundColor="DarkGray"
+                                StrokeThickness="0"
+                                StrokeShape="RoundRectangle 15"
+                                HorizontalOptions="Start"
+                                Margin="10, 10, 100, 0">
+
+                        <Label Text="Здравствуйте!" TextColor="White" Margin="10, 7, 10, 7" FontSize="Default" FontFamily="Aria" VerticalTextAlignment="Center" VerticalOptions="Center"/>
+                    </Border>
+
+                    <Border BackgroundColor="CornflowerBlue"
+                                StrokeThickness="0"
+                                StrokeShape="RoundRectangle 15"
+                                HorizontalOptions="End"
+                                Margin="100, 10, 10, 0">
+
+                        <Label Text="Привет!" TextColor="White" Margin="10, 7, 10, 7" FontSize="Default" FontFamily="Aria" VerticalTextAlignment="Center" VerticalOptions="Center"/>
+                    </Border>
+
+                    <Border BackgroundColor="CornflowerBlue"
+                                StrokeThickness="0"
+                                StrokeShape="RoundRectangle 15"
+                                HorizontalOptions="End"
+                                Margin="100, 10, 10, 0">
+
+                        <Label Text="Хочу записаться на тренировку" TextColor="White" Margin="10, 7, 10, 7" FontSize="Default" FontFamily="Aria" VerticalTextAlignment="Center" VerticalOptions="Center"/>
+                    </Border>
+
+                    <Border BackgroundColor="DarkGray"
+                                StrokeThickness="0"
+                                StrokeShape="RoundRectangle 15"
+                                HorizontalOptions="Start"
+                                Margin="10, 10, 100, 0">
+
+                        <Label Text="Зачем? Лушче посмотри на мои МОЩНЫЕ СЫСКЕЕ!" TextColor="White" Margin="10, 7, 10, 7" FontSize="Default" FontFamily="Aria" VerticalTextAlignment="Center" VerticalOptions="Center"/>
+                    </Border>
+
+                    <Border BackgroundColor="CornflowerBlue"
+                                StrokeThickness="0"
+                                StrokeShape="RoundRectangle 15"
+                                HorizontalOptions="End"
+                                Margin="100, 10, 10, 0">
+
+                        <Label Text="Спасибо" TextColor="White" Margin="10, 7, 10, 7" FontSize="Default" FontFamily="Aria" VerticalTextAlignment="Center" VerticalOptions="Center"/>
+                    </Border>
+                    <Label Text="Пт, 23.02.2024" TextColor="LightGray" FontSize="Default" HorizontalOptions="Center" Margin="5"/>
+                    <Border BackgroundColor="DarkGray"
+                                StrokeThickness="0"
+                                StrokeShape="RoundRectangle 15"
+                                HorizontalOptions="Start"
+                                Margin="10, 10, 100, 0">
+
+                        <Label Text="Здравствуйте!" TextColor="White" Margin="10, 7, 10, 7" FontSize="Default" FontFamily="Aria" VerticalTextAlignment="Center" VerticalOptions="Center"/>
+                    </Border>
+
+                    <Border BackgroundColor="CornflowerBlue"
+                                StrokeThickness="0"
+                                StrokeShape="RoundRectangle 15"
+                                HorizontalOptions="End"
+                                Margin="100, 10, 10, 0">
+
+                        <Label Text="Привет!" TextColor="White" Margin="10, 7, 10, 7" FontSize="Default" FontFamily="Aria" VerticalTextAlignment="Center" VerticalOptions="Center"/>
+                    </Border>
+
+                    <Border BackgroundColor="CornflowerBlue"
+                                StrokeThickness="0"
+                                StrokeShape="RoundRectangle 15"
+                                HorizontalOptions="End"
+                                Margin="100, 10, 10, 0">
+
+                        <Label Text="Хочу записаться на тренировку" TextColor="White" Margin="10, 7, 10, 7" FontSize="Default" FontFamily="Aria" VerticalTextAlignment="Center" VerticalOptions="Center"/>
+                    </Border>
+
+                    <Border BackgroundColor="DarkGray"
+                                StrokeThickness="0"
+                                StrokeShape="RoundRectangle 15"
+                                HorizontalOptions="Start"
+                                Margin="10, 10, 100, 0">
+
+                        <Label Text="Хорошо, записал" TextColor="White" Margin="10, 7, 10, 7" FontSize="Default" FontFamily="Aria" VerticalTextAlignment="Center" VerticalOptions="Center"/>
+                    </Border>
+
+                    <Border BackgroundColor="CornflowerBlue"
+                                StrokeThickness="0"
+                                StrokeShape="RoundRectangle 15"
+                                HorizontalOptions="End"
+                                Margin="100, 10, 10, 0">
+
+                        <Label Text="Спасибо" TextColor="White" Margin="10, 7, 10, 7" FontSize="Default" FontFamily="Aria" VerticalTextAlignment="Center" VerticalOptions="Center"/>
+                    </Border>
+                    
+
+
+
+                </VerticalStackLayout>
+
+            </ScrollView>
+        </Border>
+
+        <VerticalStackLayout Grid.Row="2" VerticalOptions="End" Margin="20, 0, 20, 5">
+            <Border HeightRequest="1"/>
+            <Grid RowDefinitions="50">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="auto"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="auto"/>
+                    <ColumnDefinition Width="auto"/>
+                </Grid.ColumnDefinitions>
+                
+                <ImageButton Grid.Column="0" Source="emoji.png" BackgroundColor="Transparent" Padding="12"/>
+                <Entry Grid.Column="1" Keyboard="Chat" BackgroundColor="Transparent" TextColor="White" Placeholder="Ввод текста..." PlaceholderColor="Grey"/>
+                <ImageButton Grid.Column="2" Source="vois.png" BackgroundColor="Transparent" Padding="12"/>
+                <ImageButton Grid.Column="3" Source="send.png" BackgroundColor="Transparent" Padding="12"/>
+            </Grid>
+        </VerticalStackLayout>
+    </Grid>
+   
+   
+
+</ContentPage>

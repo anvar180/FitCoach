@@ -34,6 +34,11 @@ namespace findgymbro
             string Url = "https://youtu.be/dQw4w9WgXcQ?si=V5GO8LssmI5W2nD0";
             Process.Start("cmd.exe", "/c start " + Url);
         }
+
+        private async void ImageButton_Clicked(object sender, EventArgs e)
+        {
+            await Shell.Current.GoToAsync("ChatPage");
+        }
     }
 
 }
