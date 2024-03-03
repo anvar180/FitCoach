@@ -1,0 +1,423 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="findgymbro.ChatPageList"
+             Shell.BackgroundColor="SteelBlue" >
+
+    <ContentPage.Background>
+        <LinearGradientBrush EndPoint="0,1">
+            <GradientStop Color="SteelBlue"
+                  Offset="0.1"/>
+            <GradientStop Color="Black"
+                  Offset="1.1"/>
+        </LinearGradientBrush>
+    </ContentPage.Background>
+
+    
+        <Shell.TitleView>
+
+            <HorizontalStackLayout>
+                <Border Margin="10, 3, 0, 0"
+                             StrokeShape="RoundRectangle 15" 
+                             BackgroundColor="CornflowerBlue"
+                             HorizontalOptions="Start"
+                             Stroke="Transparent">
+                    <ImageButton Source="search_chat.png" BackgroundColor="Transparent"/>
+                </Border>
+            </HorizontalStackLayout>
+
+         </Shell.TitleView>
+   
+    <ContentPage.ToolbarItems>
+        <ToolbarItem
+        Order="Secondary"
+        Text="Мой Профиль"
+        IconImageSource="account.png"
+        Clicked="ToolbarItem_Clicked"/>
+    </ContentPage.ToolbarItems>
+
+
+    
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            
+            
+            <Border Grid.Row="0"
+                Margin="10, 25, 10, 0"
+            StrokeShape="RoundRectangle 15" 
+            BackgroundColor="CornflowerBlue"
+            VerticalOptions="Start"
+            HorizontalOptions="Fill"
+            Stroke="Transparent">
+
+        <VerticalStackLayout>
+            <Border StrokeShape="RoundRectangle 15" 
+                    BackgroundColor="LightBlue"
+                    Stroke="Transparent"
+                    HorizontalOptions="Start"
+                    Margin = "5, 5, 0, 0">
+                <Label Text="Избранные" TextColor="Black" FontFamily="Aria" FontSize="Default" Margin="10, 5, 10, 5" />
+            </Border>
+                 <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                        <ScrollView Orientation="Horizontal">
+                            <HorizontalStackLayout>
+
+                                <Border Stroke="Transparent"
+                                        StrokeThickness="0"
+                                        StrokeShape="RoundRectangle 100"
+                                        HeightRequest="60"
+                                        WidthRequest="60"
+                                        Margin="10"
+                                        HorizontalOptions="Center">
+                                <ImageButton Source="spartak.jpg" HorizontalOptions="Center" Aspect="Fill" Clicked="ImageButton_Clicked" />
+
+                                </Border>
+                                    <Border Stroke="Transparent"
+                                            StrokeThickness="0"
+                                            StrokeShape="RoundRectangle 100"
+                                            HeightRequest="60"
+                                            WidthRequest="60"
+                                            Margin="10"
+                                            HorizontalOptions="Center">
+                                <ImageButton Source="spartak.jpg" HorizontalOptions="Center" Aspect="Fill"/>
+
+                                    </Border>
+                            <Border Stroke="Transparent"
+                                         StrokeThickness="0"
+                                         StrokeShape="RoundRectangle 100"
+                                         HeightRequest="60"
+                                    WidthRequest="60"
+                                         Margin="10"
+                                         HorizontalOptions="Center">
+                                <ImageButton Source="spartak.jpg" HorizontalOptions="Center" Aspect="Fill"/>
+
+                            </Border>
+                            <Border Stroke="Transparent"
+                                 StrokeThickness="0"
+                                 StrokeShape="RoundRectangle 100"
+                                 HeightRequest="60"
+                                    WidthRequest="60"
+                                 Margin="10"
+                                 HorizontalOptions="Center">
+                            <ImageButton Source="spartak.jpg" HorizontalOptions="Center" Aspect="Fill"/>
+                        </Border>
+
+                         </HorizontalStackLayout>
+                     </ScrollView>
+                 </Grid>
+             </VerticalStackLayout>
+         </Border>
+
+
+        
+
+            <Border Grid.Row="1" Margin="10" Stroke="Transparent">
+            <ScrollView Orientation="Vertical" VerticalScrollBarVisibility="Never">
+                <VerticalStackLayout>
+
+                <Grid RowDefinitions="50" Margin="0, 10, 0, 0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="auto"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+
+                        <Border Grid.Column="0" HeightRequest="50" WidthRequest="50"
+                            Stroke="Transparent"
+                            StrokeThickness="0"
+                            StrokeShape="RoundRectangle 100"
+                            Margin="0, 0, 15, 0">
+                        <ImageButton Source="spartak.jpg" HorizontalOptions="Center" Aspect="Fill"/>
+                    </Border>
+
+                    <Border Grid.Column="1" Stroke="Transparent" BackgroundColor="CornflowerBlue"  StrokeShape="RoundRectangle 15">
+                        <Grid Padding="10, 0, 10, 0">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="*"/>
+                                <RowDefinition Height="*"/>
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+
+                            <Label Grid.Row="0" Grid.Column="0" Text="Спартак" FontSize="Default"/>
+                            <Label Grid.Row="0" Grid.Column="1" Text="25.02.2024" FontSize="Default" TextColor="DarkSlateGray" HorizontalOptions="End"/>
+                            <Label Grid.Row="1" Grid.Column="0" Text="я твой отчим" FontSize="Default" TextColor="DarkSlateGray"/>
+                            <ImageButton Grid.Row="1" Grid.Column="1" Source="fix.png" BackgroundColor="Transparent" HorizontalOptions="End" Padding="0, 0 , 0, 25"/>
+
+
+                        </Grid>
+                    </Border>
+                </Grid>
+
+                <Grid RowDefinitions="50" Margin="0, 10, 0, 0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="auto"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+
+                        <Border Grid.Column="0" HeightRequest="50" WidthRequest="50"
+             Stroke="Transparent"
+             StrokeThickness="0"
+             StrokeShape="RoundRectangle 100"
+             Margin="0, 0, 15, 0">
+                            <ImageButton Source="spartak.jpg" HorizontalOptions="Center" Aspect="Fill"/>
+                    </Border>
+
+                    <Border Grid.Column="1" Stroke="Transparent" BackgroundColor="CornflowerBlue"  StrokeShape="RoundRectangle 15">
+                        <Grid Padding="10, 0, 10, 0">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="*"/>
+                                <RowDefinition Height="*"/>
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+
+                            <Label Grid.Row="0" Grid.Column="0" Text="Спартак" FontSize="Default"/>
+                            <Label Grid.Row="0" Grid.Column="1" Text="25.02.2024" FontSize="Default" TextColor="DarkSlateGray" HorizontalOptions="End"/>
+                            <Label Grid.Row="1" Grid.Column="0" Text="я тоже" FontSize="Default" TextColor="DarkSlateGray"/>
+                            <ImageButton Grid.Row="1" Grid.Column="1" Source="fix.png" BackgroundColor="Transparent" HorizontalOptions="End" Padding="0, 0 , 0, 25"/>
+
+
+                        </Grid>
+                    </Border>
+                </Grid>
+
+                <Grid RowDefinitions="50" Margin="0, 10, 0, 0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="auto"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+
+                        <Border Grid.Column="0" HeightRequest="50" WidthRequest="50"
+             Stroke="Transparent"
+             StrokeThickness="0"
+             StrokeShape="RoundRectangle 100"
+             Margin="0, 0, 15, 0">
+                            <ImageButton Source="spartak.jpg" HorizontalOptions="Center" Aspect="Fill"/>
+                    </Border>
+
+                    <Border Grid.Column="1" Stroke="Transparent" BackgroundColor="CornflowerBlue"  StrokeShape="RoundRectangle 15">
+                        <Grid Padding="10, 0, 10, 0">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="*"/>
+                                <RowDefinition Height="*"/>
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+
+                            <Label Grid.Row="0" Grid.Column="0" Text="Спартак" FontSize="Default"/>
+                            <Label Grid.Row="0" Grid.Column="1" Text="25.02.2024" FontSize="Default" TextColor="DarkSlateGray" HorizontalOptions="End"/>
+                            <Label Grid.Row="1" Grid.Column="0" Text="и я" FontSize="Default" TextColor="DarkSlateGray"/>
+                            <ImageButton Grid.Row="1" Grid.Column="1" Source="fix.png" BackgroundColor="Transparent" HorizontalOptions="End" Padding="0, 0 , 0, 25"/>
+
+
+                        </Grid>
+                    </Border>
+                </Grid>
+
+                <Grid RowDefinitions="50" Margin="0, 10, 0, 0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="auto"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+
+                        <Border Grid.Column="0" HeightRequest="50" WidthRequest="50"
+             Stroke="Transparent"
+             StrokeThickness="0"
+             StrokeShape="RoundRectangle 100"
+             Margin="0, 0, 15, 0">
+                            <ImageButton Source="spartak.jpg" HorizontalOptions="Center" Aspect="Fill"/>
+                    </Border>
+
+                    <Border Grid.Column="1" Stroke="Transparent" BackgroundColor="CornflowerBlue"  StrokeShape="RoundRectangle 15">
+                        <Grid Padding="10, 0, 10, 0">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="*"/>
+                                <RowDefinition Height="*"/>
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+
+                            <Label Grid.Row="0" Grid.Column="0" Text="Спартак" FontSize="Default"/>
+                            <Label Grid.Row="0" Grid.Column="1" Text="25.02.2024" FontSize="Default" TextColor="DarkSlateGray" HorizontalOptions="End"/>
+                            <Label Grid.Row="1" Grid.Column="0" Text="у тебя 4 папы" FontSize="Default" TextColor="DarkSlateGray"/>
+                            <ImageButton Grid.Row="1" Grid.Column="1" Source="fix.png" BackgroundColor="Transparent" HorizontalOptions="End" Padding="0, 0 , 0, 25"/>
+
+
+                        </Grid>
+                    </Border>
+                </Grid>
+
+                    <Grid RowDefinitions="50" Margin="0, 10, 0, 0">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="auto"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+
+                        <Border Grid.Column="0" HeightRequest="50" WidthRequest="50"
+Stroke="Transparent"
+StrokeThickness="0"
+StrokeShape="RoundRectangle 100"
+Margin="0, 0, 15, 0">
+                            <ImageButton Source="woman.jpg" HorizontalOptions="Center" Aspect="Fill"/>
+                        </Border>
+
+                        <Border Grid.Column="1" Stroke="Transparent" BackgroundColor="CornflowerBlue"  StrokeShape="RoundRectangle 15">
+                            <Grid Padding="10, 0, 10, 0">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="*"/>
+                                    <RowDefinition Height="*"/>
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+
+                                <Label Grid.Row="0" Grid.Column="0" Text="Спорт-самка" FontSize="Default"/>
+                                <Label Grid.Row="0" Grid.Column="1" Text="25.02.2024" FontSize="Default" TextColor="DarkSlateGray" HorizontalOptions="End"/>
+                                <Label Grid.Row="1" Grid.Column="0" Text="а я твоя мама" FontSize="Default" TextColor="DarkSlateGray"/>
+                                <ImageButton Grid.Row="1" Grid.Column="1" Source="sound_off.png" BackgroundColor="Transparent" HorizontalOptions="End" Padding="0, 0 , 0, 25"/>
+
+
+                            </Grid>
+                        </Border>
+                    </Grid>
+
+                    <Grid RowDefinitions="50" Margin="0, 10, 0, 0">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="auto"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+
+                        <Border Grid.Column="0" HeightRequest="50" WidthRequest="50"
+Stroke="Transparent"
+StrokeThickness="0"
+StrokeShape="RoundRectangle 100"
+Margin="0, 0, 15, 0">
+                            <ImageButton Source="woman_2.jpg" HorizontalOptions="Center" Aspect="Fill"/>
+                        </Border>
+
+                        <Border Grid.Column="1" Stroke="Transparent" BackgroundColor="CornflowerBlue"  StrokeShape="RoundRectangle 15">
+                            <Grid Padding="10, 0, 10, 0">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="*"/>
+                                    <RowDefinition Height="*"/>
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+
+                                <Label Grid.Row="0" Grid.Column="0" Text="Дам в попу" FontSize="Default"/>
+                                <Label Grid.Row="0" Grid.Column="1" Text="25.02.2024" FontSize="Default" TextColor="DarkSlateGray" HorizontalOptions="End"/>
+                                <Label Grid.Row="1" Grid.Column="0" Text="Вы: сколько?" FontSize="Default" TextColor="DarkSlateGray"/>
+                                <ImageButton Grid.Row="1" Grid.Column="1" Source=".png" BackgroundColor="Transparent" HorizontalOptions="End" Padding="0, 0 , 0, 25"/>
+
+
+                            </Grid>
+                        </Border>
+                    </Grid>
+
+                    <Grid RowDefinitions="50" Margin="0, 10, 0, 0">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="auto"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+
+                        <Border Grid.Column="0" HeightRequest="50" WidthRequest="50"
+Stroke="Transparent"
+StrokeThickness="0"
+StrokeShape="RoundRectangle 100"
+Margin="0, 0, 15, 0">
+                            <ImageButton Source="car.jpg" Aspect="Fill"/>
+                        </Border>
+
+                        <Border Grid.Column="1" Stroke="Transparent" BackgroundColor="CornflowerBlue"  StrokeShape="RoundRectangle 15">
+                            <Grid Padding="10, 0, 10, 0">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="*"/>
+                                    <RowDefinition Height="*"/>
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+
+                                <Label Grid.Row="0" Grid.Column="0" Text="Машина" FontSize="Default"/>
+                                <Label Grid.Row="0" Grid.Column="1" Text="25.02.2024" FontSize="Default" TextColor="DarkSlateGray" HorizontalOptions="End"/>
+                                <Label Grid.Row="1" Grid.Column="0" Text="КЧАУ" FontSize="Default" TextColor="DarkSlateGray"/>
+                                <ImageButton Grid.Row="1" Grid.Column="1" Source=".png" BackgroundColor="Transparent" HorizontalOptions="End" Padding="0, 0 , 0, 25"/>
+
+
+                            </Grid>
+                        </Border>
+                    </Grid>
+
+                    <Grid RowDefinitions="50" Margin="0, 10, 0, 0">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="auto"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+
+                        <Border Grid.Column="0" HeightRequest="50" WidthRequest="50"
+Stroke="Transparent"
+StrokeThickness="0"
+StrokeShape="RoundRectangle 100"
+Margin="0, 0, 15, 0">
+                            <ImageButton Source="leopard.jpg" Aspect="Fill"/>
+                        </Border>
+
+                        <Border Grid.Column="1" Stroke="Transparent" BackgroundColor="CornflowerBlue"  StrokeShape="RoundRectangle 15">
+                            <Grid Padding="10, 0, 10, 0">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="*"/>
+                                    <RowDefinition Height="*"/>
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+
+                                <Label Grid.Row="0" Grid.Column="0" Text="Снежный барс" FontSize="Default"/>
+                                <Label Grid.Row="0" Grid.Column="1" Text="25.02.2024" FontSize="Default" TextColor="DarkSlateGray" HorizontalOptions="End"/>
+                                <Label Grid.Row="1" Grid.Column="0" Text="Видео-звон. 🎥" FontSize="Default" TextColor="DarkSlateGray"/>
+                                <ImageButton Grid.Row="1" Grid.Column="1" Source=".png" BackgroundColor="Transparent" HorizontalOptions="End" Padding="0, 0 , 0, 25"/>
+
+
+                            </Grid>
+                        </Border>
+                    </Grid>
+
+
+                </VerticalStackLayout>
+            </ScrollView>
+        </Border>
+
+
+
+
+
+
+
+
+
+        </Grid>
+
+    
+
+
+
+</ContentPage>
